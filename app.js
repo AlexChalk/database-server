@@ -3,7 +3,7 @@ const app = express();
 var pairs = {};
 
 app.get('/', function (req, res) {
-  res.send('Hello, world!');
+  res.send('The in-memory data storage app.');
 });
 
 app.get('/set', function (req, res) {

@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+
+// This variable will be replaced by the db.
 var pairs = {};
 
 app.get('/', function (req, res) {
@@ -16,9 +18,8 @@ app.get('/set', function (req, res) {
 app.get('/get', function (req, res) {
   if (typeof req.query['key'] === 'string') {
     res.send(pairs[req.query['key']]);
-  } else {
-    res.redirect('/');
-  }
+  } 
+  res.end();
 });
 
 app.listen(4000, function () {

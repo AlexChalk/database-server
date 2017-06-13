@@ -2,20 +2,19 @@
   "name": "database-server",
   "version": "1.0.0",
   "description": "",
-  "main": "init.js",
+  "main": "app.js",
   "devDependencies": {
     "chai": "^4.0.2",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.1.1",
-    "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "mocha": "^3.4.2",
-    "sinon": "^2.3.4",
-    "sinon-chai": "^2.11.0"
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "karma start"
+    "test": "mocha",
+    "start": "node app.js"
   },
   "author": "adc17",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }

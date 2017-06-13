@@ -10,9 +10,9 @@ The following assumes you have Node installed:
 
 ## Usage
 
-1. Run `npm start` and navigate to `http://localhost:3000/`.
-2. To save a parameter: `localhost:3000/set?param-key=param-value`.
-3. To get a saved parameter: `localhost:3000/get?param-key`.
+1. Run `npm start` and navigate to `http://localhost:4000/`.
+2. To save a parameter: `localhost:4000/set?param-key=param-value`.
+3. To get a saved parameter: `localhost:4000/get?param-key`.
 
 ## Tests
 

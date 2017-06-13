@@ -10,7 +10,7 @@ app.get('/set', function (req, res) {
   for(var key in req.query) {
     pairs[key] = req.query[key];
   }
-  res.status(200).end();
+  res.end();
 });
 
 app.get('/get', function (req, res) {

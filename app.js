@@ -14,10 +14,10 @@ app.get('/set', function (req, res) {
 });
 
 app.get('/get', function (req, res) {
-  for(var key in req.query) {
-    if (typeof pairs[key] === 'string') {
-      res.send(pairs[key]);
-    }
+  if (typeof req.query['key'] === 'string') {
+    res.send(pairs[req.query['key']]);
+  } else {
+    res.redirect('/');
   }
 });
 

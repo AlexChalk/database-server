@@ -28,7 +28,7 @@ describe('root page', function() {
       .get('/set?john=james')
       .then(function () {
         chai.request(app)
-          .get('/get?john')
+          .get('/get?key=john')
           .end(function (err, res) {
             expect(res.text).to.equal('james');
             done();
